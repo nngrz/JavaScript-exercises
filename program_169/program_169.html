@@ -1,17 +1,25 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="program_169.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <title>Password Generator</title>
     </head>
     <body>
         <div class="container">
             <h1>Generate a</h1>
-            <h1>random password</h1>
+            <h1 id="h1-second-line">random password</h1>
             <p>Never use an insecure password again.</p>
-            <button>Generate passwords</button>
+            <button onclick="generatePasswords()">Generate passwords</button>
             <hr>
             <div class="container-password">
-                <div id="password-one"></div>
-                <div id="password-two"></div>
+                <div class="password-parent">
+                    <div class="password-child" id="password-one"></div>
+                </div>
+                <div class="password-parent">
+                    <div class="password-child" id="password-two"></div>
+                </div>
             </div>
         </div>
         <script src="program_169.js"></script>
